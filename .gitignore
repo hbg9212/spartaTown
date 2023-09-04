@@ -1,0 +1,12 @@
+Library/
+Temp/
+Logs/
+*.meta
+obj/
+UserSettings/
+ProjectSettings/
+*.suo
+UpgradeLog.htm
+*.vsconfig
+*.csproj
+*.sln
