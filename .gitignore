@@ -10,3 +10,5 @@ UpgradeLog.htm
 *.vsconfig
 *.csproj
 *.sln
+Recordings/
+UIElementsSchema/
