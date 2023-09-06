@@ -7,12 +7,19 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    public Text TimeTxt;
+    public static GameManager I;
 
+    private void Awake()
+    {
+        I = this;
+
+    }
+
+    public Text TimeTxt;
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,4 +28,6 @@ public class GameManager : MonoBehaviour
         DateTime nowDate = DateTime.Now;
         TimeTxt.text = nowDate.Hour + ":" + nowDate.Minute;
     }
+
+
 }

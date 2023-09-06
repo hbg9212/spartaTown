@@ -10,6 +10,10 @@ public class Shooting : MonoBehaviour
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
+    }
+
+    private void OnEnable()
+    {
         _anim = GetComponentInChildren<Animator>();
     }
 

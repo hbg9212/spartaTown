@@ -11,8 +11,13 @@ public class PlayerInputController : CharacterController
     private void Awake()
     {
         _camera = Camera.main;
+    }
+
+    public void OnEnable()
+    {
         _anim = GetComponentInChildren<Animator>();
     }
+
 
     public void OnMove(InputValue value)
     {
