@@ -14,7 +14,7 @@ public class CharacterBtn : MonoBehaviour
         {
             Player.P.GetComponent<PlayerInputController>().enabled = false;
             Player.P.GetComponent<Shooting>().enabled = false;
-            Transform playerParent = GameObject.Find("Player/Character").transform;
+            Transform playerParent = GameObject.Find("Players/Player/Character").transform;
             foreach (Transform child in playerParent)
             {
                 Destroy(child.gameObject);
@@ -26,7 +26,7 @@ public class CharacterBtn : MonoBehaviour
         else
         {
             UIController.U.CharacterBtn.SetActive(true);
-            Transform playerParent = GameObject.Find("Player/Character").transform;
+            Transform playerParent = GameObject.Find("Players/Player/Character").transform;
             Instantiate(data.Character, playerParent);
 
             GameObject.Find("StartUI/CharacterBtn/Btn/Image").GetComponent<Image>().sprite = data.Image;

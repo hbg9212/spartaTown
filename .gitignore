@@ -12,3 +12,4 @@ UpgradeLog.htm
 *.sln
 Recordings/
 UIElementsSchema/
+Build/

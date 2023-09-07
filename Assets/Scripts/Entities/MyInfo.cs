@@ -17,6 +17,7 @@ public class MyInfo : MonoBehaviour
         {
             playerName.text = inputField.text;
             StartUI.SetActive(false);
+            UIController.U.SearchName();
         }
         else
         {
